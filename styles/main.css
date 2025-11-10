@@ -1,0 +1,109 @@
+body {
+  width: 1920px;
+  height: 100vh;
+}
+body #wrap {
+  width: 100%;
+  height: 100%;
+}
+body #wrap header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+  padding: 0 40px;
+  border: 1.5px solid #222;
+  border-left: 0;
+  border-right: 0;
+}
+body #wrap header .fixed {
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+body #wrap header .fixed .header_left {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 40px;
+}
+body #wrap header .fixed .header_right {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 20px;
+}
+body #wrap header #logo {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14px;
+}
+body main .row1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/banner_001.png);
+}
+body main .row1 .title {
+  position: absolute;
+  top: 40%;
+  transform: tranlateY(-40%);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 36px;
+  padding: 0 215px;
+}
+body main .row1 .title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Paprika", sans-serif;
+}
+body main .row1 .title p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+body main .row1 .title a {
+  width: 150px;
+  height: 60px;
+  padding-left: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid #222;
+}
+body main .row2 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+body main .row2 .contents .sort_wrap {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+body main .row2 .contents .sort_wrap .sort {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+body main .row2 .contents .sort_wrap .sort li {
+  width: 130px;
+  height: 100%;
+  background: yellow;
+}
+body main .row2 .contents .sort_wrap .sort li a {
+  width: 130px;
+  height: 60px;
+  background: pink;
+}
+
+/*# sourceMappingURL=main.css.map */
