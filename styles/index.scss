@@ -86,7 +86,7 @@ body {width:1920px; height:100vh;
             @include flex-row; @include border-top-bottom;
             .title {
                 width:380px; height:100%;
-                @include flex-col; gap:10px; border-right:$border;
+                @include flex-col; gap:16px; border-right:$border;
                 justify-content:center; align-items:center;
                 .title_desc {text-align:center;}
             }
