@@ -16,6 +16,7 @@ $color-grey-border-dark:#919191;
 $color-point:#4c8628;
 $color-point-bg:#E1EDD9;
 $color-bg:#F5EBE0;
+$border:1.5px solid #aaa;
 
 @mixin main_title {
     font-size:2rem;
@@ -41,8 +42,9 @@ $color-bg:#F5EBE0;
     display:flex;
     flex-flow:column nowrap;
 }
-@mixin border {
+@mixin border-top-bottom {
     border:1.5px solid #aaa;
+    border-left:0; border-right:0;
 }
 @mixin border-light {
     border:1.5px solid #d8d8d8;
