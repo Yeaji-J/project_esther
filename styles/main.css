@@ -187,7 +187,7 @@ body main .row2 .title {
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  gap: 10px;
+  gap: 16px;
   border-right: 1.5px solid #aaa;
   justify-content: center;
   align-items: center;
@@ -198,7 +198,6 @@ body main .row2 .title .title_desc {
 body main .row2 .contents .sort_wrap {
   width: 100%;
   height: 60px;
-  padding: 0 16px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -213,17 +212,19 @@ body main .row2 .contents .sort_wrap .sort {
   align-items: center;
 }
 body main .row2 .contents .sort_wrap .sort li {
-  overflow: hidden;
   width: 130px;
-  height: 60px;
+  height: 57px;
+  transform: translateY(1px);
   text-align: center;
 }
 body main .row2 .contents .sort_wrap .sort li a {
-  overflow: hidden;
   display: block;
   width: 100%;
   height: 100%;
   line-height: 60px;
+}
+body main .row2 .contents .sort_wrap .sort li:hover {
+  font-weight: 500;
 }
 body main .row2 .contents .sort_wrap .sort li:hover a {
   background-color: #E1EDD9;
@@ -233,6 +234,9 @@ body main .row2 .contents .sort_wrap .more {
   flex-flow: row nowrap;
   align-items: center;
   align-items: center;
+}
+body main .row2 .contents .sort_wrap .more:hover span {
+  font-weight: 500;
 }
 body main .row2 .contents #best_prod_wrap .swiper-wrapper {
   width: 1540px;
@@ -349,9 +353,13 @@ body main .row4 .contents .sort li {
   border-bottom: 1.5px solid #aaa;
 }
 body main .row4 .contents .sort li a {
-  width: 100%;
+  width: 99.8%;
   height: 100%;
   display: block;
+}
+body main .row4 .contents .sort li:hover a {
+  font-weight: 500;
+  background-color: #E1EDD9;
 }
 body main .row4 .contents #featured_prod_wrap {
   width: 100%;
@@ -562,12 +570,12 @@ body main .row6 .contents .left .txt2 strong {
 body main .row6 .contents .left .txt2 .price {
   margin-right: 4px;
 }
-body main .row6 .contents a {
+body main .row6 .contents .prod_img {
   width: 956px;
   height: 100%;
   border-right: 1.5px solid #aaa;
 }
-body main .row6 .contents a img {
+body main .row6 .contents .prod_img img {
   width: 100%;
   height: 100%;
 }
@@ -606,6 +614,9 @@ body main .row6 .contents .right .more img {
   width: 24px;
   height: 24px;
 }
+body main .row6 .contents .right .more:hover {
+  font-weight: 500;
+}
 body main .row7 {
   width: 100%;
   height: 1215px;
@@ -623,6 +634,9 @@ body main .row7 .title h2 {
 }
 body main .row7 .title .title_sub {
   margin-bottom: 4px;
+}
+body main .row7 .title {
+  border-bottom: 1.5px solid #aaa;
 }
 body main .row7 .step {
   width: 100%;
@@ -672,7 +686,8 @@ body main .row7 .recommended {
   border-left: 0;
   border-right: 0;
 }
-body main .row7 .recommended .title {
+body main .row7 .recommended .rec_title {
+  position: relative;
   background-color: #F5EBE0;
   width: 260px;
   height: 100%;
@@ -680,8 +695,30 @@ body main .row7 .recommended .title {
   flex-flow: column nowrap;
   text-align: center;
   justify-content: center;
+  gap: 4px;
   border-left: 1.5px solid #aaa;
   border-right: 1.5px solid #aaa;
+}
+body main .row7 .recommended .rec_title h4 {
+  font-weight: 500;
+}
+body main .row7 .recommended .rec_title .more {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-items: center;
+  font-size: 0.75rem;
+}
+body main .row7 .recommended .rec_title .more img {
+  width: 16px;
+  height: 16px;
+  transform: translateY(1px);
+}
+body main .row7 .recommended .rec_title .more:hover {
+  font-weight: 500;
 }
 body main .row7 .recommended .pack_wrap {
   display: flex;
@@ -790,6 +827,9 @@ body main .row8 .brand_list li:nth-child(3) a, body main .row8 .brand_list li:nt
   text-align: center;
   display: block;
 }
+body main .row8 .brand_list li:hover {
+  background-color: #E1EDD9;
+}
 body main .row8 .brand_detail {
   width: 100%;
   height: 400px;
@@ -896,6 +936,8 @@ body footer .left .menu_wrap {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  gap: 20px;
+  text-align: center;
   border-bottom: 1.5px solid #aaa;
 }
 body footer .left .menu_wrap li {
@@ -909,7 +951,7 @@ body footer .left .menu_wrap li a {
 body footer .left .txt {
   width: 100%;
   height: 158px;
-  padding: 20px 80px;
+  padding: 20px 120px;
   display: flex;
   flex-flow: column nowrap;
   gap: 8px;
@@ -927,6 +969,13 @@ body footer .left .txt .row1, body footer .left .txt .row2, body footer .left .t
 }
 body footer .left .txt span {
   font-size: 0.75rem;
+}
+body footer .left .txt address {
+  font-size: 0.75rem;
+  margin-left: -12px;
+}
+body footer .left .txt a:hover {
+  text-decoration: underline;
 }
 body footer .right {
   width: 584px;
