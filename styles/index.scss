@@ -1,4 +1,4 @@
-@use './common.scss' as*;
+@import './common.scss';
 
 /* 공통 */
 body {
@@ -9,9 +9,8 @@ body {
 
 /* 개별 */
 body {
-    > * {min-width:1680px;}
+    /* > * {min-width:320px;} */
     #wrap {
-        width:100%; height:100%;
         position:relative;
         header {
             position:fixed; z-index:999;
@@ -32,7 +31,7 @@ body {
         #nav_page {
             position:absolute; z-index:998; top:0; left:0;
             transition:transform 0.4s ease; transform:translateY(-440px);
-            width:1920px; height:420px; padding:120px 0 40px;
+            width:100%; height:420px; padding:120px 0 40px;
             @include flex-row; gap:60px; justify-content:center;
             background-color:$color-white; box-shadow:0 4px 20px rgba(0,0,0,0.2);
             .nav_detail {
@@ -66,7 +65,7 @@ body {
                     .swiper-wrapper {
                         .swiper-slide {
                             position:relative; width:100%; height:100%;
-                            background:url(../images/banner_001.png) no-repeat center / 100%;
+                            background:url(../images/banner_001.png) no-repeat center / cover;
                             .title {
                                 position:absolute; top:40%; transform:tranlateY(-40%);
                                 @include flex-col; gap:36px;
@@ -89,7 +88,7 @@ body {
                         }
                     }
                     .bnr_page_wrap {
-                        width:100%; height:max-content;
+                        height:max-content;
                         position:absolute; bottom:auto; right:auto; top:50%; left:120px; transform:translateX(-50%); z-index:5;
                         .swiper-pagination {
                             width:100%; height:16px; 
@@ -111,7 +110,7 @@ body {
                 }
                 .contents {
                     .sort_wrap {
-                        width:100%; height:60px;
+                        height:60px;
                         @include flex-row; justify-content:space-between;
                         border-bottom:$border;
                         .sort {
@@ -209,7 +208,6 @@ body {
                         }
                     }
                     #featured_prod_wrap {
-                        width:100%; height:100%;
                         .swiper-wrapper {
                             .swiper-slide {
                                 position:relative;
@@ -245,7 +243,7 @@ body {
                     width:1140px; height:750px; padding:0 120px;
                     position:absolute; right:60px; top:100px;
                     .title {
-                        width:100%; text-align:center;
+                        text-align:center;
                         h2 {margin-bottom:40px;}
                         .title_sub {margin-bottom:8px;}
                         .title_desc {margin-bottom:60px;}
@@ -284,34 +282,32 @@ body {
                 }
             }
             .row6 {
-                width:100%; height:680px; margin-bottom:120px;
+                height:680px; margin-bottom:120px;
                 @include border-top-bottom;
                 .title_wrap {
                     border-bottom:$border;
-                    width:100%; height:278px;
+                    height:278px;
                     .title_container {
-                        width:100%; height:100%;
                         padding:0 80px; border-left:$border;
                         .title {
-                            width:100%; height:100%;
                             @include flex-col; padding-top:140px; gap:16px;
                         }
                     }
                 }
-                .contents {width:100%; height:400px; padding:0 80px;
+                .contents {height:400px; padding:0 80px;
                     @include flex-row;
                     .left {
                         width:450px; height:100%;
                         @include flex-col; text-align:center;
                         border-right:$border; border-left:$border;
                         .txt1 {
-                            width:100%; height:100%; padding:94px 0;
+                            padding:94px 0;
                             border-bottom:$border;
                             h3 {font-size:$font-size-h-20; font-weight:$font-weight-med;}
                             p {font-size:$font-size-p-16; font-weight:$font-weight-med;}
                         }
                         .txt2 {
-                            width: 100%; height:100%; padding:35px 0;
+                            padding:35px 0;
                             @include flex-col; gap:4px;
                             em, strong {font-weight:$font-weight-med; margin-right:4px;}
                             strong {font-size:$font-size-p-16;}
@@ -340,23 +336,23 @@ body {
                 }
             }
             .row7 {
-                width:100%; height:1215px;
+                height:1215px;
                 .title {
-                    width:100%; height:180px; padding:20px 0;
+                    padding:20px 0;
                     @include flex-col; align-items:center;
                     h2 {margin-bottom:16px;}
                     .title_sub {margin-bottom:4px;} 
                     border-bottom:$border;
                 }
                 .step {
-                    width:100%; height:540px; padding:32px;
+                    height:540px; padding:32px;
                     @include flex-col; gap:40px; text-align:center;
                     .step_wrap {
                         @include flex-row; gap:60px; justify-content:center;
                         li {
                             width:300px; height:380px;
                             .num {
-                                width:100%; text-align:left;
+                                text-align:left;
                                 font-size:$font-size-h-20; font-weight:$font-weight-med;
                                 color:$color-point;
                             }
@@ -369,7 +365,7 @@ body {
                     }
                 }
                 .recommended {
-                    width:100%; height:375px; padding:0 80px;
+                    height:375px; padding:0 80px;
                     @include flex-row;
                     @include border-top-bottom;
                     .rec_title {
@@ -424,28 +420,28 @@ body {
                 }
             }
             .row8 {
-                width:100%; height:780px; margin-bottom:120px;
+                height:780px; margin-bottom:120px;
                 .title {
-                    width:100%; height:280px; padding-left:160px;
+                    height:280px; padding-left:160px;
                     padding-top:80px;
                     h2 {margin-bottom:16px;}
                     .title_sub {margin-bottom:8px;}
                 }
                 .brand_list {
-                    width:100%; height:100px;
+                    height:100px;
                     @include flex-row; align-items:center; justify-content:center;
                     @include border-top-bottom;
                     li {
                         width:258px; height:100%;
                         a {
-                            width:100%; height:100%; padding-top:32px;
+                            padding-top:32px;
                             text-align:center;
                             display:block;
                         }
                     }
                     li:nth-child(3), li:nth-child(4), li:nth-child(5) {
                         a {
-                            width:100%; height:100px; padding-top:40px;
+                            padding-top:40px;
                             text-align:center;
                             display:block;
                         }
@@ -453,7 +449,7 @@ body {
                     li:hover {background-color:$color-point-bg;;}
                 }
                 .brand_detail {
-                    width:100%; height:400px;
+                    height:400px;
                     @include flex-row; align-items:center;
                     border-bottom:$border;
                     .prev_btn {

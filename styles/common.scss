@@ -1,4 +1,7 @@
+body {min-width:320px;}
+
 $font-size-h-32:2rem;
+$font-size-h-28:1.75rem;
 $font-size-h-20:1.25rem;
 $font-size-p-16:1rem;
 $font-size-p-14:0.875rem;
@@ -23,16 +26,44 @@ $border:1.5px solid #aaa;
     font-weight:700;
     font-family:'Paprika', sans-serif;
 }
+@mixin main_title_t {
+    font-size:$font-size-h-28;
+    font-family:'Paprika', sans-serif;
+}
+@mixin main_title_m {
+    font-size:$font-size-h-20;
+    font-family:'Paprika', sans-serif;
+}
 
 @mixin main_sub_title {
     font-size:1.25rem;
     font-weight:500;
     line-height:150%;
 }
+@mixin main_sub_title_t {
+    font-size:$font-size-p-12;
+    font-weight:500;
+    line-height:150%;
+}
+@mixin main_sub_title_m {
+    font-size:$font-size-p-10;
+    font-weight:500;
+    line-height:150%;
+}
+
 @mixin main_p {
     font-size:0.875rem;
     line-height:150%;
 }
+@mixin main_p_t {
+    font-size:$font-size-p-12;
+    line-height:150%;
+}
+@mixin main_p_m {
+    font-size:$font-size-p-10;
+    line-height:150%;
+}
+
 @mixin flex-row {
     display:flex;
     flex-flow:row nowrap;
