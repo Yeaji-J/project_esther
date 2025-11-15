@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* responsive.scss */
+body {
+  min-width: 320px;
+}
+
+/* breakpoints
+desktop (1250~max) / 1920
+tablet (740~1249) / 1024
+mobile (320~739) / 480
+*/
+/* tablet */
+@media screen and (max-width: 1249px) {
+  /* 공통 */
+  body {
+    background: pink;
+  }
+  body .title_sub {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  body .title_desc, body h3, body p {
+    font-size: 0.75rem;
+    line-height: 150%;
+  }
+  /* 개별 */
+  body #wrap header .fixed .header_left a:nth-child(4), body #wrap header .fixed .header_left a:nth-child(5) {
+    display: none;
+  }
+  body #wrap #nav_page {
+    width: 100%;
+    height: auto;
+    transform: translateY(-616px);
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0 4px;
+  }
+  body #wrap #nav_page .nav_detail {
+    width: 15%;
+    height: 80%;
+  }
+  body #wrap #nav_page .nav_detail .contents_wrap {
+    gap: 8px;
+  }
+  body #wrap #nav_page .nav_detail .contents_wrap img {
+    width: 32px;
+    height: 32px;
+  }
+  body #wrap #nav_page .nav_detail .contents_wrap li {
+    font-size: 0.75rem;
+  }
+  body #wrap main #bnr {
+    height: 980px;
+  }
+}
+/* mobile *//*# sourceMappingURL=responsive.css.map */

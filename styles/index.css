@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  min-width: 320px;
+}
+
 /* 공통 */
 body h2 {
   font-size: 2rem;
@@ -17,12 +21,9 @@ body .title_desc, body h3, body p {
 
 /* 개별 */
 body {
-  width: 1920px;
-  height: 100vh;
+  /* > * {min-width:320px;} */
 }
 body #wrap {
-  width: 100%;
-  height: 100%;
   position: relative;
 }
 body #wrap header {
@@ -70,9 +71,10 @@ body #wrap #nav_page {
   z-index: 998;
   top: 0;
   left: 0;
+  padding: 16px;
   transition: transform 0.4s ease;
   transform: translateY(-440px);
-  width: 1920px;
+  width: 100%;
   height: 420px;
   padding: 120px 0 40px;
   display: flex;
@@ -140,7 +142,7 @@ body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url(../images/banner_001.png);
+  background: url(../images/banner_001.png) no-repeat center/cover;
 }
 body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title {
   position: absolute;
@@ -183,7 +185,6 @@ body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title a:hover spa
   font-weight: 500;
 }
 body #wrap main .row1 #bnr_wrap .bnr_page_wrap {
-  width: 100%;
   height: -moz-max-content;
   height: max-content;
   position: absolute;
@@ -226,7 +227,6 @@ body #wrap main .row2 .title .title_desc {
   text-align: center;
 }
 body #wrap main .row2 .contents .sort_wrap {
-  width: 100%;
   height: 60px;
   display: flex;
   flex-flow: row nowrap;
@@ -391,10 +391,6 @@ body #wrap main .row4 .contents .sort li:hover a {
   font-weight: 500;
   background-color: #E1EDD9;
 }
-body #wrap main .row4 .contents #featured_prod_wrap {
-  width: 100%;
-  height: 100%;
-}
 body #wrap main .row4 .contents #featured_prod_wrap .swiper-wrapper .swiper-slide {
   position: relative;
   border-right: 1.5px solid #aaa;
@@ -451,7 +447,6 @@ body #wrap main .row5 .contents_wrap {
   top: 100px;
 }
 body #wrap main .row5 .contents_wrap .title {
-  width: 100%;
   text-align: center;
 }
 body #wrap main .row5 .contents_wrap .title h2 {
@@ -521,7 +516,6 @@ body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-
   height: 24px;
 }
 body #wrap main .row6 {
-  width: 100%;
   height: 680px;
   margin-bottom: 120px;
   border: 1.5px solid #aaa;
@@ -530,25 +524,19 @@ body #wrap main .row6 {
 }
 body #wrap main .row6 .title_wrap {
   border-bottom: 1.5px solid #aaa;
-  width: 100%;
   height: 278px;
 }
 body #wrap main .row6 .title_wrap .title_container {
-  width: 100%;
-  height: 100%;
   padding: 0 80px;
   border-left: 1.5px solid #aaa;
 }
 body #wrap main .row6 .title_wrap .title_container .title {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-flow: column nowrap;
   padding-top: 140px;
   gap: 16px;
 }
 body #wrap main .row6 .contents {
-  width: 100%;
   height: 400px;
   padding: 0 80px;
   display: flex;
@@ -565,8 +553,6 @@ body #wrap main .row6 .contents .left {
   border-left: 1.5px solid #aaa;
 }
 body #wrap main .row6 .contents .left .txt1 {
-  width: 100%;
-  height: 100%;
   padding: 94px 0;
   border-bottom: 1.5px solid #aaa;
 }
@@ -579,8 +565,6 @@ body #wrap main .row6 .contents .left .txt1 p {
   font-weight: 500;
 }
 body #wrap main .row6 .contents .left .txt2 {
-  width: 100%;
-  height: 100%;
   padding: 35px 0;
   display: flex;
   flex-flow: column nowrap;
@@ -644,12 +628,9 @@ body #wrap main .row6 .contents .right .more:hover {
   font-weight: 500;
 }
 body #wrap main .row7 {
-  width: 100%;
   height: 1215px;
 }
 body #wrap main .row7 .title {
-  width: 100%;
-  height: 180px;
   padding: 20px 0;
   display: flex;
   flex-flow: column nowrap;
@@ -663,7 +644,6 @@ body #wrap main .row7 .title .title_sub {
   margin-bottom: 4px;
 }
 body #wrap main .row7 .step {
-  width: 100%;
   height: 540px;
   padding: 32px;
   display: flex;
@@ -683,7 +663,6 @@ body #wrap main .row7 .step .step_wrap li {
   height: 380px;
 }
 body #wrap main .row7 .step .step_wrap li .num {
-  width: 100%;
   text-align: left;
   font-size: 1.25rem;
   font-weight: 500;
@@ -700,7 +679,6 @@ body #wrap main .row7 .step .step_wrap li .pack_sub_title {
   font-weight: 500;
 }
 body #wrap main .row7 .recommended {
-  width: 100%;
   height: 375px;
   padding: 0 80px;
   display: flex;
@@ -805,12 +783,10 @@ body #wrap main .row7 .recommended .pack_wrap .pack .shop img {
   height: 20px;
 }
 body #wrap main .row8 {
-  width: 100%;
   height: 780px;
   margin-bottom: 120px;
 }
 body #wrap main .row8 .title {
-  width: 100%;
   height: 280px;
   padding-left: 160px;
   padding-top: 80px;
@@ -822,7 +798,6 @@ body #wrap main .row8 .title .title_sub {
   margin-bottom: 8px;
 }
 body #wrap main .row8 .brand_list {
-  width: 100%;
   height: 100px;
   display: flex;
   flex-flow: row nowrap;
@@ -838,15 +813,11 @@ body #wrap main .row8 .brand_list li {
   height: 100%;
 }
 body #wrap main .row8 .brand_list li a {
-  width: 100%;
-  height: 100%;
   padding-top: 32px;
   text-align: center;
   display: block;
 }
 body #wrap main .row8 .brand_list li:nth-child(3) a, body #wrap main .row8 .brand_list li:nth-child(4) a, body #wrap main .row8 .brand_list li:nth-child(5) a {
-  width: 100%;
-  height: 100px;
   padding-top: 40px;
   text-align: center;
   display: block;
@@ -855,7 +826,6 @@ body #wrap main .row8 .brand_list li:hover {
   background-color: #E1EDD9;
 }
 body #wrap main .row8 .brand_detail {
-  width: 100%;
   height: 400px;
   display: flex;
   flex-flow: row nowrap;
