@@ -156,6 +156,7 @@
                     </div>
                     <div class="bnr_page_wrap">
                         <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination2"></div>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -792,13 +793,21 @@
             loop:true,
             autoplay:{delay:5000,},
             pagination:{
-                el:"#bnr_page_wrap .swiper-pagination",
+                el:".bnr_page_wrap .swiper-pagination",
+                type:'progressbar',
             },
             navigation:{
-                prevEl:"#bnr_page_wrap .swiper-button-prev",
-                nextEl:"#bnr_page_wrap .swiper-button-next"
+                prevEl:"#bnr_wrap .swiper-button-prev",
+                nextEl:"#bnr_wrap .swiper-button-next"
             }
         })
+        const bnrSwiper2 = new Swiper ('#bnr_wrap', {
+            pagination: {
+                el:".bnr_page_wrap .swiper-pagination2",
+                type:'fraction',
+            }
+        })
+        bnrSwiper.controller.control = bnrSwiper2;
         const bestSwiper = new Swiper ("#best_prod_wrap",{
             slidesPerView:4.1,
         });

@@ -9,40 +9,59 @@ mobile (320~739) / 480
 
 /* tablet */
 @media screen and (max-width: 1249px) {
-  /* 공통 */
-  body { background:pink;   
+  body {
+    /* 공통 */
+    h2 {@include main_title_t;}
     .title_sub {@include main_sub_title_t;}
     .title_desc, h3, p {@include main_p_t;}
   }
-  /* 개별 */
-  body {
-    #wrap {
-      header {
-        .fixed {
-          .header_left {
-          a:nth-child(4), a:nth-child(5) {display:none;}
-          }
-        }
-      }
-      #nav_page {
-        width:100%; height:auto; transform:translateY(-616px);
-        display:flex; flex-flow:row wrap; gap:0 4px;
-        .nav_detail {
-          width:15%; height:80%;
-          .contents_wrap{
-            gap:8px;
-            img {width:32px; height:32px;}
-            li {font-size:$font-size-p-12;}
-          }
-        }
-        
-      }
-      main {
-        #bnr {height:980px;}
-      }
-    }
+      /* 개별 */
+  body #wrap header .fixed .header_left a:nth-child(4),
+  body #wrap header .fixed .header_left a:nth-child(5) {
+    display: none;
   }
-}
+  body #wrap #nav_page {
+    width: 100%; height: auto; transform: translateY(-100%); padding-bottom: 80px;
+    display: flex; flex-flow: row wrap; gap: 40px 16px; align-items: flex-start;
+  }
+  body #wrap #nav_page .nav_detail {
+    width: 15%;
+    height: 50%;
+  }
+  body #wrap #nav_page .nav_detail .contents_wrap {
+    gap: 8px;
+  }
+  body #wrap #nav_page .nav_detail .contents_wrap img {
+    width: 32px; height: 32px;
+  }
+  body #wrap #nav_page .nav_detail .contents_wrap li {
+    font-size: $font-size-p-12;
+  }
+  body #wrap main .row1 {height:auto;}
+  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide {background-position:right;}
+  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title { left:8%;}
+  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title h2 {font-size:$font-size-h-28;}
+  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title p {font-size:$font-size-p-16;}
+  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title a {width:117px; height:48px; padding-left:12px;}
+  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title a span {font-size:$font-size-p-14;}
+  body #wrap main .row1 #bnr_wrap .bnr_page_wrap {
+    width:280px; left:8%; top:65%;
+  }
+  body #wrap main .row1 #bnr_wrap .swiper-button-prev, 
+  body #wrap main .row1 #bnr_wrap .swiper-button-next {width:24px; height:24px;}
+  /* row2. best */
+  body #wrap main .row2 {height:600px; @include flex-col;}
+  body #wrap main .row2 .title {width:100%; height:180px; border-bottom:$border;}
+  body #wrap main .row2 .contents .sort_wrap {height:48px;}
+  body #wrap main .row2 .contents .sort_wrap .sort li:nth-child(9),
+  body #wrap main .row2 .contents .sort_wrap .sort li:nth-child(10) {display:none;}
+  body #wrap main .row2 .contents .sort_wrap .sort li a {font-size: $font-size-p-12;}
+  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper {height:370px;}
+  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide img {width:100%;height:234px;}
+  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide {}
+  body #wrap main .row2 .contents #best_prod_wrap {}
+} /* tablet - media query 끝 */
+
 
 
 
@@ -50,4 +69,3 @@ mobile (320~739) / 480
 @media screen and (max-width: 739px) {
 
 }
-  

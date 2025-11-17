@@ -1,4 +1,4 @@
-@import './common.scss';
+@use './common.scss' as *;
 
 /* 공통 */
 body {
@@ -29,14 +29,14 @@ body {
             #logo {position:fixed; left:50%; transform:translateX(-50%); top:14px;}
         }
         #nav_page {
-            position:absolute; z-index:998; top:0; left:0; padding:16px;
+            position:absolute; z-index:998; top:0; left:0;
             transition:transform 0.4s ease; transform:translateY(-440px);
-            width:100%; height:420px; padding:120px 0 40px;
-            @include flex-row; gap:60px; justify-content:center;
+            width:100%; height:420px; padding:120px 20px 40px;
+            @include flex-row; gap:40px; justify-content:center;
             background-color:$color-white; box-shadow:0 4px 20px rgba(0,0,0,0.2);
             .nav_detail {
                 width:120px; height:240px;
-                @include flex-col; gap:24px; align-items:center; justify-content:start;
+                @include flex-col; gap:16px; align-items:center; justify-content:start;
                 .title {font-weight:$font-weight-med;}
                 .contents_wrap {
                     @include flex-col; gap:16px; align-items:center; justify-content:start;
@@ -44,7 +44,10 @@ body {
                         width:36px; height:36px;
                         margin-bottom:8px;
                     }
-                    li {font-size:$font-size-p-14;}
+                    li {
+                        font-size:$font-size-p-14;
+                        a {display:block;}
+                    }
                 }
             }
             .more {
@@ -67,9 +70,8 @@ body {
                             position:relative; width:100%; height:100%;
                             background:url(../images/banner_001.png) no-repeat center / cover;
                             .title {
-                                position:absolute; top:40%; transform:tranlateY(-40%);
+                                position:absolute; top:40%; left:12%; transform:tranlateY(-40%);
                                 @include flex-col; gap:36px;
-                                padding:0 215px;
                                 h2 {@include main_title; font-family:'Paperozi'}
                                 p {@include main_sub_title}
                                 a {
@@ -87,16 +89,32 @@ body {
                             }
                         }
                     }
-                    .bnr_page_wrap {
-                        height:max-content;
-                        position:absolute; bottom:auto; right:auto; top:50%; left:120px; transform:translateX(-50%); z-index:5;
-                        .swiper-pagination {
-                            width:100%; height:16px; 
+                    .bnr_page_wrap { z-index:999;
+                        width:400px; height:16px;
+                        position:absolute; top:70%; left:12%;
+                        @include flex-row; gap:16px;
+                        .swiper-pagination-progressbar {
+                            height:2px;
+                            color:$color-grey-border-light;
+                            .swiper-pagination-progressbar-fill {background-color:$color-black;}
+                        }
+                        .swiper-pagination-fraction {
+                            display:none;
+                            .swiper-pagination-current {font-weight:$font-weight-med;}
                         }
                     }
-                    .swiper-button-prev {
-                        z-index:999; color:$color-black;
+                    .swiper-button-prev {left:2%;z-index:999;
+                        color:$color-black;
+                        width:32px; height:32px;
+                        svg {width:100%; height:100%;}
                     }
+                    .swiper-button-prev:hover {color:$color-black;}
+                    .swiper-button-next {right:2%; z-index:999;
+                        color:$color-black;
+                        width:32px; height:32px;
+                        svg {width:100%; height:100%;}
+                    }
+                    .swiper-button-next:hover {color:$color-white;}
                 }
             }
             .row2 {
