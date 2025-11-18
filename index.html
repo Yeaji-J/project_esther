@@ -799,7 +799,7 @@
             navigation:{
                 prevEl:"#bnr_wrap .swiper-button-prev",
                 nextEl:"#bnr_wrap .swiper-button-next"
-            }
+            },
         })
         const bnrSwiper2 = new Swiper ('#bnr_wrap', {
             pagination: {
@@ -810,6 +810,15 @@
         bnrSwiper.controller.control = bnrSwiper2;
         const bestSwiper = new Swiper ("#best_prod_wrap",{
             slidesPerView:4.1,
+            /* breakpoints {
+                1920 : {
+                    slidesP
+                }
+                1250 : {
+                    slidesPerView:5,
+                }
+            }
+            } */
         });
         const featuredSwiper = new Swiper ("#featured_prod_wrap",{
             slidesPerView:4,

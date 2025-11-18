@@ -121,7 +121,7 @@ body {
                 height:610px; margin-bottom:120px;
                 @include flex-row; @include border-top-bottom;
                 .title {
-                    width:380px; height:100%;
+                    width:380px; height:100%; padding:0 32px;
                     @include flex-col; gap:16px; border-right:$border;
                     justify-content:center; align-items:center;
                     .title_desc {text-align:center;}
@@ -155,13 +155,14 @@ body {
                     }
                     #best_prod_wrap {
                         .swiper-wrapper {
-                            width:1540px; height:100%;
+                            width:1540px; height:auto;
                             .swiper-slide {
+                                width:100%;
                                 position:relative;
                                 border-right:$border;
-                                img {width:100%; height:378px;}
+                                img {width:100%; height:378px; object-fit:100%;}
                                 .desc {
-                                    width:380px; height:172px;
+                                    width:100%; height:172px;
                                     padding:32px; text-align:center;
                                     h3 {margin-bottom:16px;}
                                     .price {
@@ -170,7 +171,7 @@ body {
                                         .dc_price {font-size:$font-size-p-16; font-weight:$font-weight-med;}
                                     }
                                     .review {font-size:$font-size-p-12;
-                                        img{
+                                        img{  
                                         width:16px; height:16px; margin-right:4px;
                                         transform:translateY(4px);
                                         }

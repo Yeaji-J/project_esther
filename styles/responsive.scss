@@ -15,7 +15,7 @@ mobile (320~739) / 480
     .title_sub {@include main_sub_title_t;}
     .title_desc, h3, p {@include main_p_t;}
   }
-      /* 개별 */
+      /* 개별 */      
   body #wrap header .fixed .header_left a:nth-child(4),
   body #wrap header .fixed .header_left a:nth-child(5) {
     display: none;
@@ -56,9 +56,8 @@ mobile (320~739) / 480
   body #wrap main .row2 .contents .sort_wrap .sort li:nth-child(9),
   body #wrap main .row2 .contents .sort_wrap .sort li:nth-child(10) {display:none;}
   body #wrap main .row2 .contents .sort_wrap .sort li a {font-size: $font-size-p-12;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper {height:370px;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide img {width:100%;height:234px;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide {}
+  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper {}
+  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide {width:20%;}
   body #wrap main .row2 .contents #best_prod_wrap {}
 } /* tablet - media query 끝 */
 

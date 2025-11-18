@@ -254,6 +254,7 @@ body #wrap main .row2 {
 body #wrap main .row2 .title {
   width: 380px;
   height: 100%;
+  padding: 0 32px;
   display: flex;
   flex-flow: column nowrap;
   gap: 16px;
@@ -308,18 +309,20 @@ body #wrap main .row2 .contents .sort_wrap .more:hover span {
 }
 body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper {
   width: 1540px;
-  height: 100%;
+  height: auto;
 }
 body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide {
+  width: 100%;
   position: relative;
   border-right: 1.5px solid #aaa;
 }
 body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide img {
   width: 100%;
   height: 378px;
+  object-fit: 100%;
 }
 body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc {
-  width: 380px;
+  width: 100%;
   height: 172px;
   padding: 32px;
   text-align: center;
@@ -1146,12 +1149,8 @@ mobile (320~739) / 480
   body #wrap main .row2 .contents .sort_wrap .sort li a {
     font-size: 0.75rem;
   }
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper {
-    height: 370px;
-  }
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide img {
-    width: 100%;
-    height: 234px;
+  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide {
+    width: 20%;
   }
 } /* tablet - media query 끝 */
 /* mobile */
