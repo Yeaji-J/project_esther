@@ -49,4 +49,3 @@ window.addEventListener('scroll',()=>{
 
 //swiper pagination, btn
 
-
