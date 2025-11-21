@@ -27,7 +27,7 @@ mobile (320~739) / 480
   #wrap main .row4 .contents .sort li a {font-size:$font-size-p-14;}
   #wrap main .row4 .contents #featured_prod_wrap .swiper-wrapper .swiper-slide .fav {bottom:36%;}
   #wrap main .row4 .contents #featured_prod_wrap .swiper-wrapper .swiper-slide .desc {height:auto;}
-  #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav {}
+  #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav {right:4%; bottom:40%;}
   }
 }
 
@@ -149,8 +149,8 @@ mobile (320~739) / 480
                   }
                 }
               }
-              .fav {
-                img {width:20px; height:20px;}
+              .fav {bottom:36%;
+                img {width:24px; height:24px;}
               }
             }
           }

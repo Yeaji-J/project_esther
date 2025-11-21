@@ -489,7 +489,7 @@ body #wrap main .row5 {
   z-index: 800;
   width: 100%;
   height: 940px;
-  padding: 60px;
+  padding: 120px;
   background-image: url(../images/project_model_001.png), url(../images/bg_opacity.jpg);
   background-size: contain, cover;
   background-position: bottom, left;
@@ -524,6 +524,7 @@ body #wrap main .row5 .contents_wrap #project_prod_wrap {
 }
 body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper {
   width: 900px;
+  height: auto;
 }
 body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide {
   width: 33%;
@@ -534,7 +535,7 @@ body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-
 }
 body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide img {
   width: 100%;
-  height: 300px;
+  height: 100%;
 }
 body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .desc {
   background-color: #fff;
@@ -565,8 +566,8 @@ body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-
 }
 body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav {
   position: absolute;
-  right: 0.5rem;
-  bottom: 11.5rem;
+  right: 4%;
+  bottom: 38%;
   z-index: 900;
 }
 body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav img {
@@ -1133,6 +1134,10 @@ mobile (320~739) / 480
   body #wrap main .row4 .contents #featured_prod_wrap .swiper-wrapper .swiper-slide .desc {
     height: auto;
   }
+  body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav {
+    right: 4%;
+    bottom: 40%;
+  }
 }
 /* tablet */
 @media screen and (max-width: 1249px) {
@@ -1375,9 +1380,12 @@ mobile (320~739) / 480
     width: 12px;
     height: 12px;
   }
+  body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav {
+    bottom: 36%;
+  }
   body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
   body {
     /* #wrap main .row5 { //1640
