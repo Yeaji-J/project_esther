@@ -162,7 +162,7 @@ body {
                                 border-right:$border;
                                 img {width:100%; height:378px; object-fit:cover;}
                                 .desc {
-                                    width:100%; height:172px;
+                                    width:100%; height:auto;
                                     padding:32px; text-align:center;
                                     h3 {margin-bottom:16px;}
                                     .price {
@@ -187,7 +187,8 @@ body {
                 }
             }
             .row3 {
-                height:500px; padding-left:120px;
+                height:500px; padding-left:120px; margin-bottom:120px;
+                background-color:#e5e5e5;
                 background:url(../images/brand_banner_001.png) no-repeat center/contain;
                 .title {
                     height:100%; @include flex-col; justify-content:center;
@@ -226,7 +227,7 @@ body {
                         }
                     }
                     #featured_prod_wrap {
-                        width:80%; border-left:$border; border-right:$border;
+                        width:80%; height:auto; border-left:$border; border-right:$border;
                         .swiper-wrapper {
                             .swiper-slide {
                                 position:relative;
@@ -241,8 +242,8 @@ body {
                                     }
                                 }
                                 .fav {
-                                    position:absolute; right:1rem; bottom:10rem; z-index:900;
-                                    img {width:24px; height:24px}
+                                    position:absolute; right:0.8rem; bottom:160px; z-index:900;
+                                    img {width:100%; height:100%;}
                                     width:24px; height:24px;
                                 }
                             }
@@ -258,17 +259,19 @@ body {
                 background-size:contain, cover;
                 background-position:bottom, left;
                 background-repeat:no-repeat, no-repeat;
+                .title {
+                    position:absolute; right:13%; transform:translateX(-13%);
+                    text-align:center;
+                    h2 {margin-bottom:40px;}
+                    .title_sub {margin-bottom:8px;}
+                    .title_desc {margin-bottom:60px;}
+                }
                 .contents_wrap {
-                    height:750px; width:50%; padding-right:100px;
-                    position:absolute; right:60px; top:100px;
-                    .title {
-                        text-align:center;
-                        h2 {margin-bottom:40px;}
-                        .title_sub {margin-bottom:8px;}
-                        .title_desc {margin-bottom:60px;}
-                    }
-                    #project_prod_wrap {border:$border;
-                        .swiper-wrapper {width:900px; height:476px;
+                    width:100%; padding-right:100px;
+                    #project_prod_wrap {
+                        border:$border; width:50%; position:absolute;
+                        top:60%; right:5%; transform:translate(-5%,-60%);
+                        .swiper-wrapper {width:900px; 
                             .swiper-slide {
                                 width:33%; height:100%;
                                 position:relative;
@@ -277,7 +280,7 @@ body {
                                 img {width:100%; height:300px;}
                                 .desc {
                                     background-color:$color-white;
-                                    width:100%; height:174px; padding:32px;
+                                    width:100%; height:100%; padding:28px;
                                     @include flex-col; gap:16px; text-align:center;
                                     .price {
                                         .dc_rate {font-weight:$font-weight-med; margin-right:8px;}
@@ -291,7 +294,7 @@ body {
                                     }
                                 }
                                 .fav {
-                                    position:absolute; top:267px; right:10px; z-index:900;
+                                    position:absolute; right:0.5rem; bottom:11.5rem; z-index:900;
                                     img{width:24px; height:24px}
                                     width:24px; height:24px;
                                 }

@@ -6,125 +6,164 @@ desktop (1250~max) / 1920
 tablet (740~1249) / 1024
 mobile (320~739) / 480
 */
-
-@media screen and (max-width: 1640px) {
-  body #wrap main .row2 {@include flex-col; height:auto;}
-  body #wrap main .row2 .title {width:100%; padding:40px; border-bottom:$border;}
-  body #wrap main .row2 .contents {width:100%;}
-  body #wrap main .row2 .contents .sort_wrap {height:48px;}
-  body #wrap main .row2 .contents .sort_wrap .sort li {height:100%; width:120px;}
-  body #wrap main .row2 .contents .sort_wrap .sort li a {line-height:47px; font-size: $font-size-p-14; transform:translateY(-1px);}
-  body #wrap main .row2 .contents .sort_wrap .more span {font-size:$font-size-p-14;}
-  body #wrap main .row2 .contents .sort_wrap .more img {width:20px; height:20px; transform:translateY(1px);}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide img {height:320px;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .fav {top:290px;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .fav img {width:22px; height:22px;}
-  body #wrap main .row3 {height:400px;}
-  body #wrap main .row4 .contents .sort li a {font-size:$font-size-p-14;}
-  body #wrap main .row5 .contents_wrap {width:60%; padding-right:40px; right:40px;}
-  body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .desc{font-size:$font-size-p-12;}
+@media screen and (max-width: 1800px) {
+  body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .desc {height:100%; padding:20px;}
 }
-
+@media screen and (max-width: 1640px) {
+  body { background:yellow;
+    #wrap main .row2 {@include flex-col; height:auto;}
+  #wrap main .row2 .title {width:100%; padding:40px; border-bottom:$border;}
+  #wrap main .row2 .contents {width:100%;}
+  #wrap main .row2 .contents .sort_wrap {height:48px;}
+  #wrap main .row2 .contents .sort_wrap .sort li {height:100%; width:120px;}
+  #wrap main .row2 .contents .sort_wrap .sort li a {line-height:47px; font-size: $font-size-p-14; transform:translateY(-1px);}
+  #wrap main .row2 .contents .sort_wrap .more span {font-size:$font-size-p-14;}
+  #wrap main .row2 .contents .sort_wrap .more img {width:20px; height:20px; transform:translateY(1px);}
+  #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide img {height:300px;}
+  #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc {padding:24px;}
+  #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .fav {top:268px;}
+  #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .fav img {width:22px; height:22px;}
+  #wrap main .row3 {width:100%;}
+  #wrap main .row4 .contents .sort li a {font-size:$font-size-p-14;}
+  #wrap main .row4 .contents #featured_prod_wrap .swiper-wrapper .swiper-slide .fav {bottom:36%;}
+  #wrap main .row4 .contents #featured_prod_wrap .swiper-wrapper .swiper-slide .desc {height:auto;}
+  #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav {}
+  }
+}
 
 /* tablet */
 @media screen and (max-width: 1249px) {
+  body {background:pink;}
   body {
     /* 공통 */
     h2 {@include main_title_t;}
     .title_sub {@include main_sub_title_t;}
     .title_desc, h3, p {@include main_p_t;}
   }
-      /* 개별 */      
-  body #wrap header .fixed .header_left a:nth-child(4),
-  body #wrap header .fixed .header_left a:nth-child(5) {display: none;}
-  body #wrap #nav_page {
-    width: 100%; height: auto; transform: translateY(-100%); padding-bottom: 80px;
-    display: flex; flex-flow: row wrap; gap: 40px 16px; align-items: flex-start;
-  }
-  body #wrap #nav_page .nav_detail {width: 15%; height: 50%;}
-  body #wrap #nav_page .nav_detail .contents_wrap {gap: 8px;}
-  body #wrap #nav_page .nav_detail .contents_wrap img {width: 32px; height: 32px;}
-  body #wrap #nav_page .nav_detail .contents_wrap li {font-size: $font-size-p-12;}
-  body #wrap main .row1 {height:auto;}
-  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide {background-position:right;}
-  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title { left:8%;}
-  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title h2 {font-size:$font-size-h-28;}
-  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title p {font-size:$font-size-p-16;}
-  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title a {width:117px; height:48px; padding-left:12px;}
-  body #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title a span {font-size:$font-size-p-14;}
-  body #wrap main .row1 #bnr_wrap .bnr_page_wrap {width:280px; left:8%; top:65%;}
-  body #wrap main .row1 #bnr_wrap .swiper-button-prev, 
-  body #wrap main .row1 #bnr_wrap .swiper-button-next {width:24px; height:24px;}
-  /* row2. best */
-  body #wrap main .row2 .contents .sort_wrap .sort li:nth-child(9),
-  body #wrap main .row2 .contents .sort_wrap .sort li:nth-child(10) {display:none;}
-  body #wrap main .row2 .contents .sort_wrap .sort li {width:100px; height:100%;}
-  body #wrap main .row2 .contents .sort_wrap .sort li a {line-height:47px; font-size: $font-size-p-12; transform:translateY(-1px);}
-  body #wrap main .row2 .contents .sort_wrap .more span {font-size:$font-size-p-12;}
-  body #wrap main .row2 .contents .sort_wrap .more img {width:20px; height:20px; transform:translateY(1px);}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide img {height:234px;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc {height:136px; padding:20px 16px;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc .price .dc_rate {@include main_p_t;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc .price .dc_price {font-size:$font-size-p-14-t-price;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc .review {font-size:$font-size-p-10;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc .review img {width:12px; height:12px; transform:translateY(3px);}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .fav {top:205px;}
-  body #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .fav img {width:20px; height:20px;}
-  /* row3. brand_banner */
-  body #wrap main .row3 {height:300px; padding:60px; margin-bottom:80px;}
-  body #wrap main .row3 .title {justify-content:flex-start;}
-  body #wrap main .row3 .title h2 {margin-bottom:20px;}
-  body #wrap main .row3 .title .title_desc {display:none;}
-  /* row4. featured */
-  body #wrap main .row4 {
-    height:auto;
-    .title_wrap {
-      height:180px; padding:0 40px;
-      .title {
-        padding:0 40px; gap:8px;
-        justify-content:center;
-      }
+      /* 개별 */
+  body {
+    #wrap header .fixed .header_left a:nth-child(4),
+    #wrap header .fixed .header_left a:nth-child(5) {display: none;}
+    #wrap #nav_page {
+      width: 100%; height: auto; transform: translateY(-100%); padding-bottom: 80px;
+      display: flex; flex-flow: row wrap; gap: 40px 16px; align-items: flex-start;
     }
-    .contents {
-      @include flex-col; margin:0 40px; height:auto;
-      .sort {
-        width:100%; height:48px;
-        @include flex-row;
-        li {
-          width:100%; height:100%; line-height:48px;
-          font-size:$font-size-p-12;border-right:$border;
+    #wrap #nav_page .nav_detail {width: 15%; height: 50%;}
+    #wrap #nav_page .nav_detail .contents_wrap {gap: 8px;}
+    #wrap #nav_page .nav_detail .contents_wrap img {width: 32px; height: 32px;}
+    #wrap #nav_page .nav_detail .contents_wrap li {font-size: $font-size-p-12;}
+    #wrap main .row1 {height:auto;}
+    #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide {background-position:right;}
+    #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title { left:8%;}
+    #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title h2 {font-size:$font-size-h-28;}
+    #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title p {font-size:$font-size-p-16;}
+    #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title a {width:117px; height:48px; padding-left:12px;}
+    #wrap main .row1 #bnr_wrap .swiper-wrapper .swiper-slide .title a span {font-size:$font-size-p-14;}
+    #wrap main .row1 #bnr_wrap .bnr_page_wrap {width:280px; left:8%; top:65%;}
+    #wrap main .row1 #bnr_wrap .swiper-button-prev, 
+    #wrap main .row1 #bnr_wrap .swiper-button-next {width:24px; height:24px;}
+    /* row2. best */
+    #wrap main .row2 .contents .sort_wrap .sort li:nth-child(9),
+    #wrap main .row2 .contents .sort_wrap .sort li:nth-child(10) {display:none;}
+    #wrap main .row2 .contents .sort_wrap .sort li {width:100px; height:100%;}
+    #wrap main .row2 .contents .sort_wrap .sort li a {line-height:47px; font-size: $font-size-p-12; transform:translateY(-1px);}
+    #wrap main .row2 .contents .sort_wrap .more span {font-size:$font-size-p-12;}
+    #wrap main .row2 .contents .sort_wrap .more img {width:20px; height:20px; transform:translateY(1px);}
+    #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide img {height:234px;}
+    #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc {height:136px; padding:20px 16px;}
+    #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc .price .dc_rate {@include main_p_t;}
+    #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc .price .dc_price {font-size:$font-size-p-14-t-price;}
+    #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc .review {font-size:$font-size-p-10;}
+    #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .desc .review img {width:12px; height:12px; transform:translateY(3px);}
+    #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .fav {top:205px;}
+    #wrap main .row2 .contents #best_prod_wrap .swiper-wrapper .swiper-slide .fav img {width:20px; height:20px;}
+    /* row3. brand_banner */
+    #wrap main .row3 {object-fit:contain;padding:60px; margin-bottom:80px; position:relative;}
+    #wrap main .row3 .title {justify-content:flex-start; position:absolute; top:30%; left:5%;}
+    #wrap main .row3 .title h2 {margin-bottom:20px;}
+    #wrap main .row3 .title .title_desc {display:none;}
+    /* row4. featured */
+    #wrap main .row4 {
+      height:auto;
+      .title_wrap {
+        height:180px; padding:0 40px;
+        .title {
+          padding:0 40px; gap:8px;
+          justify-content:center;
         }
       }
-      #featured_prod_wrap {
-        width:100%;
-        .swiper-wrapper {
-          .swiper-slide {
-            .desc {
-              padding:20px 16px;
-              .price {
-                .dc_rate {@include main_p_t;}
-                .dc_price {font-size:$font-size-p-14-t-price;}
+      .contents {
+        @include flex-col; margin:0 40px; height:auto;
+        .sort {
+          width:100%; height:48px;
+          @include flex-row;
+          li {
+            width:100%; height:100%; line-height:48px;
+            font-size:$font-size-p-12;border-right:$border;
+          }
+        }
+        #featured_prod_wrap {
+          width:100%;
+          .swiper-wrapper {
+            .swiper-slide {
+              .desc {
+                padding:20px 16px; height:auto;
+                .price {
+                  .dc_rate {@include main_p_t;}
+                  .dc_price {font-size:$font-size-p-14-t-price;}
+                }
               }
-            }
-            .fav {
-              right:0.8rem; bottom:9.8rem;
-              img {width:20px; height:20px;}
-            }
+              .fav {
+                right:0.8rem; bottom:9.8rem;
+                img {width:20px; height:20px;}
+              }
+              }
             }
           }
         }
       }
-    }
-  }
-  /* ro5. project */
-  body #wrap main .row5 {
-    .contents_wrap {
-      /* right:0; top:50%; transform:translate(-50%, -50%); margin:0 auto; */
-      .title {
+      /* ro5. project */
+    #wrap main .row5 {
+      .title {margin-top:40px;
+        left:50%; transform:translateX(-50%);
+
+        
+        
         
       }
-      #project_prod_wrap {}
-
+      .contents_wrap {
+        /* right:0; top:50%; transform:translate(-50%, -50%); margin:0 auto; */
+        #project_prod_wrap {
+          .swiper-wrapper {
+            .swiper-slide {
+              a {
+                img {height:auto;}
+                .desc {
+                  .price {
+                    .dc_rate {font-size:$font-size-p-12;}
+                    .dc_price {font-size:$font-size-p-14;}
+                  }
+                  .review {
+                    font-size:$font-size-p-10;
+                    img {width:12px; height:12px;}
+                  }
+                }
+              }
+              .fav {
+                img {width:20px; height:20px;}
+              }
+            }
+          }
+        }
+  
+      }
+      }
+      /* #wrap main .row5 { //1640
+        .contents_wrap {
+          width:60%; padding-right:40px; right:40px;
+          #project_prod_wrap .swiper-wrapper .swiper-slide .desc{font-size:$font-size-p-12;}
+        }
+      } */
     }
   }
   
@@ -133,10 +172,11 @@ mobile (320~739) / 480
  /* tablet - media query 끝 */
 
 @media screen and (max-width: 849px) {
-  body #wrap main .row2 .contents .sort_wrap .sort li {width:80px; height:100%;}
+  body {background:lime;}
+  #wrap main .row2 .contents .sort_wrap .sort li {width:80px; height:100%;}
   
 }
 
 /* mobile */
 @media screen and (max-width: 739px) {
-  body #wrap main .row2 .contents #best_prod_wrap {background:lime;}}
+  #wrap main .row2 .contents #best_prod_wrap {background:lime;}}

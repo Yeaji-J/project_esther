@@ -431,12 +431,12 @@
                             </div>
             </section>
             <section class="row5" id="project">
+                <div class="title">
+                    <h2>국민 영양 Project</h2>
+                    <p class="title_sub">더 좋은 제품, 더 낮은 가격</p>
+                    <p class="title_desc">온 국민의 부담 없는 영양 관리를 위해 여에스더 박사가 만든 고품질 제품을 최저가 8,900원부터 만나보세요</p>
+                </div>
                 <div class="contents_wrap">
-                    <div class="title">
-                        <h2>국민 영양 Project</h2>
-                        <p class="title_sub">더 좋은 제품, 더 낮은 가격</p>
-                        <p class="title_desc">온 국민의 부담 없는 영양 관리를 위해 여에스더 박사가 만든 고품질 제품을 최저가 8,900원부터 만나보세요</p>
-                    </div>
                     <div class="swiper" id="project_prod_wrap">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
@@ -814,6 +814,12 @@
             breakpoints : {
                 740 : {
                     slidesPerView:4,
+                },
+                1250 : {
+                    slidesPerView:5,
+                },
+                1640 : {
+                    slidesPerView:4,
                 }
             }
         });
@@ -823,21 +829,17 @@
                 740 : {
                     slidesPerView:4,
                 },
-                1240: {
-                    slidesPerView:3,
-                },
-                1640: {
-                    slidesPerView:4,
-                },
             }
-            
         })
         const projectSwiper = new Swiper ("#project_prod_wrap",{
             slidesPerView:2,
             breakpoints : {
                 740 : {
-                    slidesPerView:3,
+                    slidesPerView:2,
                 },
+                1250 : {
+                    slidesPerView:3,
+                }
             }
         })
     </script>
