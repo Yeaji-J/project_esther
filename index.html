@@ -21,6 +21,7 @@
     <!-- 개별 css, script 파일 작성 -->
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/swiper.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -443,7 +444,7 @@
                                 <a href="#">
                                     <img src="./images/project001.jpg" alt="여에스더 셀레늄 콤플렉스">
                                     <div class="desc">
-                                        <h3>[국민영양]여에스더 콘드로이친 뮤코다당 단백 15일분 (소연골 유래 프리미엄)</h3>
+                                        <h3>여에스더 어린콜라겐 레티놀A (국내최다 인체적용시험 보유 콜라겐 원료)</h3>
                                         <p class="price">
                                             <em class="dc_rate">55%</em>
                                             <span class="dc_price">8,900원</span>
@@ -787,61 +788,5 @@
             </div>
         </footer>
     </div>
-    <script>
-        const bnrSwiper = new Swiper ('#bnr_wrap',{
-            slidesPerView:1,
-            loop:true,
-            autoplay:{delay:5000,},
-            pagination:{
-                el:".bnr_page_wrap .swiper-pagination",
-                type:'progressbar',
-            },
-            navigation:{
-                prevEl:"#bnr_wrap .swiper-button-prev",
-                nextEl:"#bnr_wrap .swiper-button-next"
-            },
-        })
-        const bnrSwiper2 = new Swiper ('#bnr_wrap', {
-            pagination: {
-                el:".bnr_page_wrap .swiper-pagination2",
-                type:'fraction',
-            }
-        })
-        bnrSwiper.controller.control = bnrSwiper2;
-
-        const bestSwiper = new Swiper ("#best_prod_wrap",{
-            slidesPerView:2,
-            breakpoints : {
-                740 : {
-                    slidesPerView:4,
-                },
-                1250 : {
-                    slidesPerView:5,
-                },
-                1640 : {
-                    slidesPerView:4,
-                }
-            }
-        });
-        const featuredSwiper = new Swiper ("#featured_prod_wrap",{
-            slidesPerView:2,
-            breakpoints : {
-                740 : {
-                    slidesPerView:4,
-                },
-            }
-        })
-        const projectSwiper = new Swiper ("#project_prod_wrap",{
-            slidesPerView:2,
-            breakpoints : {
-                740 : {
-                    slidesPerView:2,
-                },
-                1250 : {
-                    slidesPerView:3,
-                }
-            }
-        })
-    </script>
 </body>
 </html>
