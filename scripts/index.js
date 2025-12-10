@@ -49,3 +49,12 @@ window.addEventListener('scroll',()=>{
 
 //swiper pagination, btn
 
+//e.preventDefault()
+document.addEventListener('DOMContentLoaded', function() {
+    const allLinks = document.querySelectorAll('a');
+    allLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+        });
+    });
+});

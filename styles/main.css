@@ -4,6 +4,9 @@ body {
 }
 
 /* 공통 */
+body {
+  min-width: 320px;
+}
 body h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -1090,7 +1093,9 @@ mobile (320~739) / 480
   }
 }
 @media screen and (max-width: 1640px) {
-  body { /* background:yellow; */ }
+  body {
+    background: yellow;
+  }
   body #wrap main .row2 {
     display: flex;
     flex-flow: column nowrap;
@@ -1163,13 +1168,79 @@ mobile (320~739) / 480
   body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .fav {
     top: 60%;
   }
+  body #wrap main .row6 {
+    border-bottom: 1.5px solid #aaa;
+    height: auto;
+  }
+  body #wrap main .row6 .contents {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+  }
+  body #wrap main .row6 .contents .left {
+    width: 100vw;
+    height: auto;
+  }
+  body #wrap main .row6 .contents .left .txt1 {
+    padding: 20px 0;
+    font-size: 1rem;
+  }
+  body #wrap main .row6 .contents .left .txt2 p {
+    font-size: 0.75rem;
+  }
+  body #wrap main .row6 .contents .left .txt2 {
+    padding: 20px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+  }
+  body #wrap main .row6 .contents .left .txt2 em, body #wrap main .row6 .contents .left .txt2 strong {
+    font-size: 0.875rem;
+  }
+  body #wrap main .row6 .contents .left .txt2 {
+    border-bottom: 1.5px solid #aaa;
+  }
+  body #wrap main .row6 .contents .prod_img {
+    width: calc(100vw - 40px);
+    text-align: center;
+    border-left: 1.5px solid #aaa;
+    height: auto;
+  }
   body #wrap main .row6 .contents .prod_img img {
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  body #wrap main .row6 .contents .right {
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 12px 0;
+  }
+  body #wrap main .row6 .contents .right p {
+    display: none;
+  }
+  body #wrap main .row6 .contents .right a {
+    position: absolute;
+    top: 60%;
+    right: 20%;
   }
 }
 /* background - yellow */
 @media screen and (max-width: 1249px) {
-  body { /* background:pink; */ }
+  body {
+    background: pink;
+  }
   body {
     /* 공통 */
   }
@@ -1379,12 +1450,21 @@ mobile (320~739) / 480
   body {
     /* ro5. project */
   }
+  body #wrap main .row5 {
+    position: relative;
+  }
   body #wrap main .row5 .title {
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
   body #wrap main .row5 .title .title_sub {
     display: none;
+  }
+  body #wrap main .row5 .contents_wrap {
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
   }
   body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide a img {
     width: 100%;
@@ -1410,7 +1490,7 @@ mobile (320~739) / 480
 }
 @media screen and (max-width: 849px) {
   body {
-    background: lime;
+    background: orange;
   }
   #wrap main .row2 .contents .sort_wrap .sort li {
     width: 80px;
@@ -1422,7 +1502,7 @@ mobile (320~739) / 480
 }
 /* mobile */
 @media screen and (max-width: 739px) {
-  #wrap main .row2 .contents #best_prod_wrap {
+  body {
     background: lime;
   }
 }

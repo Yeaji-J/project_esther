@@ -2,6 +2,7 @@
 
 /* 공통 */
 body {
+    min-width:320px;
     h2 {@include main_title;}
     .title_sub {@include main_sub_title;}
     .title_desc, h3, p {@include main_p;}

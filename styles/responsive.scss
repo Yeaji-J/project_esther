@@ -10,7 +10,7 @@ mobile (320~739) / 480
   body #wrap main .row5 .contents_wrap #project_prod_wrap .swiper-wrapper .swiper-slide .desc {height:100%; padding:20px;}
 }
 @media screen and (max-width: 1640px) {
-  body { /* background:yellow; */
+  body { background:yellow;
     #wrap main {
       .row2 {
         @include flex-col; height:auto;
@@ -74,12 +74,33 @@ mobile (320~739) / 480
           }
         }
       }
-      .row6 {
-        .contents {
+      .row6 { border-bottom:$border; height:auto;
+        .contents {@include flex-col; position:relative;
+          .left {
+            width:100vw; height:auto;
+            .txt1{
+              padding:20px 0; font-size:$font-size-p-16;
+            }
+            .txt2{
+              p {font-size:$font-size-p-12;}
+              padding:20px 0; @include flex-row; gap: 40px; justify-content:center;
+              em, strong {font-size:$font-size-p-14;}
+              border-bottom:$border;
+            }
+          }
           .prod_img {
-            img {object-fit:cover;}
+            width:calc(100vw - 40px); text-align:center; border-left:$border; height:auto;
+            img {object-fit:cover;width:100%; height:100%;}
+          }
+          .right {position:absolute; z-index:999; left:50%; top:50%; transform:translate(-50%,50%);
+            @include flex-col; justify-content:center; align-items:center; width:100vw; height:auto; padding:12px 0;
+            p {display:none;}
+            a {position:absolute; top:60%; right:20%;}
           }
         }
+      }
+      .row7 {
+        
       }
     }
   }
@@ -88,7 +109,7 @@ mobile (320~739) / 480
 
 
 @media screen and (max-width: 1249px) {
-  body {/* background:pink; */}
+  body {background:pink;}
   body {
     /* 공통 */
     h2 {@include main_title_t;}
@@ -177,12 +198,14 @@ mobile (320~739) / 480
         }
       }
       /* ro5. project */
-    #wrap main .row5 {
+    #wrap main .row5 {position:relative;
       .title {
+        position:absolute;
         left:50%; transform:translateX(-50%);
         .title_sub {display:none;}
       }
       .contents_wrap {
+        position:absolute; bottom:20%; right:10%;
         #project_prod_wrap {
           .swiper-wrapper {
             .swiper-slide {
@@ -212,7 +235,7 @@ mobile (320~739) / 480
   }
 
 @media screen and (max-width: 849px) {
-  body {background:lime;}
+  body {background:orange;}
   #wrap main .row2 .contents .sort_wrap .sort li {width:80px; height:100%;}
   #wrap main .row4 {
     .contents {
@@ -221,8 +244,10 @@ mobile (320~739) / 480
       }
     }
   }
+
 }
 
 /* mobile */
 @media screen and (max-width: 739px) {
-  #wrap main .row2 .contents #best_prod_wrap {background:lime;}}
+  body {background:lime;}
+}

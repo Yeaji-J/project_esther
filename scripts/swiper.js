@@ -55,14 +55,8 @@ const featuredSwiper = new Swiper ("#featured_prod_wrap",{
     }
 })
 const projectSwiper = new Swiper ("#project_prod_wrap",{
-    slidesPerView:2,
+    slidesPerView:3,
     loop:true,
-    breakpoints : {
-        740 : {
-            slidesPerView:2,
-        },
-        1024 : {slidesPerView:3},
-    },
     navigation:{
         prevEl:'#project_prod_wrap .swiper-button-prev',
         nextEl:'#project_prod_wrap .swiper-button-next',
