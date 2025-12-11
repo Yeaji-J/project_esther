@@ -41,6 +41,7 @@ const bestSwiper = new Swiper ("#best_prod_wrap",{
 /* row4 featured */
 const featuredSwiper = new Swiper ("#featured_prod_wrap",{
     slidesPerView:2,
+    loop:true,
     breakpoints : {
         740 : {
             slidesPerView:3,
