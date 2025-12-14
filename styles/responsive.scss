@@ -510,7 +510,6 @@ mobile (320~739) / 480
 }
 /* mobile */
 @media screen and (max-width: 739px) {
-  body {background:lime;}
   body {
     h2 {font-size:$font-size-h-20;}
     .title_desc {font-size:$font-size-p-10;}

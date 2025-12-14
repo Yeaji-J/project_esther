@@ -1888,9 +1888,6 @@ mobile (320~739) / 480
 }
 /* mobile */
 @media screen and (max-width: 739px) {
-  body {
-    background: lime;
-  }
   body h2 {
     font-size: 1.25rem;
   }
