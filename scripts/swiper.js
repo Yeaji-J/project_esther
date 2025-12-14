@@ -57,6 +57,7 @@ const featuredSwiper = new Swiper ("#featured_prod_wrap",{
 })
 const projectSwiper = new Swiper ("#project_prod_wrap",{
     slidesPerView:3,
+    autoplay:{delay:2000,},
     loop:true,
     navigation:{
         prevEl:'#project_prod_wrap .swiper-button-prev',
